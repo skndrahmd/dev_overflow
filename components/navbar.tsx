@@ -36,7 +36,14 @@ const Navbar = () => {
         >
           Ask Question
         </Link>
-        <ClerkProvider>
+        <ClerkProvider
+          appearance={{
+            elements: {
+              formatButtonPrimary: "primary-gradient",
+              footerActionLink: "primary-text-gradient hover:test-primary-500",
+            },
+          }}
+        >
           <SignedOut>
             <SignInButton />
           </SignedOut>
